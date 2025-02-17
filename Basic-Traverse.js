@@ -1,7 +1,7 @@
 //Basic traversal in 2D array
 
 function traverse(arr, m, n) {
-    let res = "";
+    let res = ""; 
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             res += arr[i][j] + " ";
