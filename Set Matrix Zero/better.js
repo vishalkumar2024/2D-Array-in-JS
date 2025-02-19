@@ -5,7 +5,7 @@
 function setMatrix(arr, m, n) {
     let row = [];
     let col = [];
-    for (let i = 0; i < m; i++) {
+    for (let i = 0; i < m; i++) {       //TC=O(m*n)  
         for (let j = 0; j < n; j++) {
             if (arr[i][j] == 0) {
                 row[i] = 1;
@@ -13,7 +13,7 @@ function setMatrix(arr, m, n) {
             }
         }
     }
-    for (let i = 0; i < m; i++) {
+    for (let i = 0; i < m; i++) {       //TC=O(m*n)  
         for (let j = 0; j < n; j++) {
             if(row[i] || col[j]==1){
                 arr[i][j]=0;
@@ -26,6 +26,6 @@ function setMatrix(arr, m, n) {
 arr = [[1, 1, 1], [1, 0, 1], [1, 1, 1]];
 console.log(setMatrix(arr, 3, 3));
 
-// TC=O(n*n*n)   O(n*n*(n+n)+(n*n))
-// SC=O(1)
+// TC=O(2*m*n)   O(m*n)+O(m*n)
+// SC=O(m+n)
 
