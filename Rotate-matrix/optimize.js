@@ -5,17 +5,18 @@ function rotateMatrix(arr) {
     let n = arr.length;
 
     // Transpose the array
-    for (let i = 0; i < n; i++) {          //O(n*n)
+    for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
             let temp = arr[i][j]
-            arr[i][j] = arr[j][i]
+            arr[i][j] = arr[j][i];
             arr[j][i] = temp;
         }
     }
+
     // Reverse each rows
-    for (let i = 0; i < n; i++) {    //O(n*n/2)
+    for (let i = 0; i < n; i++) {
         let start = 0;
-        let end = n - 1;
+        end = n - 1;
         while (start < end) {
             let temp = arr[i][start];
             arr[i][start] = arr[i][end];
@@ -24,6 +25,7 @@ function rotateMatrix(arr) {
             end--;
         }
     }
+
     return arr;
 }
 let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
