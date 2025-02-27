@@ -13,7 +13,6 @@ function printRow(n) {
     let res = [];
     for (let i = 1; i <=n; i++) {
         res.push(ncr(n, i));
-        console.log(res)
     }
     return res;
 }
