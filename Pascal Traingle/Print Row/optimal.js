@@ -11,3 +11,6 @@ function printRow(n) {
     return res;
 }
 console.log(printRow(5));
+
+//TC=O(n)
+//SC=O(n)

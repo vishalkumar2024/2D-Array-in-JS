@@ -1,5 +1,7 @@
-function printRow(n) {
+// This function basically returns the entire row of pascal's triangle of given row
+// number "n"
 
+function printRow(n) {
     function ncr(row, col) {
         let n = row - 1;
         let r = col - 1
