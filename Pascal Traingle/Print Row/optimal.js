@@ -5,7 +5,6 @@ function printRow(n) {
     for (let i = 1; i < n ; i++) {
         ans = ans * (n - i);
         ans = ans / i;
-        console.log(ans)
         res.push(ans)
     }
     return res;
