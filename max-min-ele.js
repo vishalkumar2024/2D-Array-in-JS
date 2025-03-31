@@ -11,4 +11,7 @@ function MaxMin(arr,m,n){
 }
 
 let arr=[[11, 62, 83, 55], [18, 96, 17, 81], [95, 110, 101, 12]]
-console.log(MaxMin(arr,3,4))
+console.log(MaxMin(arr,3,4));
+
+// TC=O(m*n)
+// SC=O(1)
