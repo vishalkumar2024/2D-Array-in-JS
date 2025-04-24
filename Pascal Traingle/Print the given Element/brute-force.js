@@ -16,5 +16,5 @@ function pascalTraingle(row, col) {
 }
 console.log(pascalTraingle(5, 3));
 
-// TC=O(n)+O(r)=O(n-r)
+// TC=O(n)+O(r)=O(n+r)
 // SC=O(1)

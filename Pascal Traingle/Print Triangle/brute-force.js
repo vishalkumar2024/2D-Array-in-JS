@@ -20,6 +20,5 @@ function pascalTriangle(n) {
 }
 console.log(pascalTriangle(7));
 
-
 // TC=O(r)*O(n)*O(n)
 // SC=O(n*n)

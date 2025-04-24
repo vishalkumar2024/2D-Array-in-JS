@@ -10,7 +10,7 @@ function setMatrix(arr, m, n) {
             }
         }
     }
-    function setCol(j) {       
+    function setCol(j) {
         for (let i = 0; i < m; i++) {   //TC=O(m)
             if (arr[i][j] != 0) {
                 arr[i][j] = -Infinity;
@@ -36,9 +36,9 @@ function setMatrix(arr, m, n) {
     return arr;
 }
 
-arr=[[1,1,1],[1,0,1],[1,1,1]];
-console.log(setMatrix(arr,3,3))
+arr = [[1, 1, 1], [1, 0, 1], [1, 1, 1]];
+console.log(setMatrix(arr, 3, 3))
 
-// TC=O(n³)   O(m*n*(n+m)+(m*n))
+// TC= O(m*n*(n+m)+(m*n)) ~ O(n³)
 // SC=O(1)
 

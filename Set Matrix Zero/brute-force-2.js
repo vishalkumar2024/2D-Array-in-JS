@@ -30,3 +30,6 @@ function setMatrix(arr, m, n) {
 
 arr = [[1, 1, 1], [1, 0, 1], [1, 1, 1], [1, 1, 1]];
 console.log(setMatrix(arr, 4, 3))
+
+// TC=O(m*n*(m+n)) ~ O(n*n*n)
+// SC=O(n*n)
