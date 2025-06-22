@@ -1,8 +1,8 @@
 function printRow(n) {
-    let res = []
+    let res = []  //SC=O(n)
     res[0] = 1;
     let ans = 1;
-    for (let i = 1; i < n ; i++) {
+    for (let i = 1; i < n ; i++) {  //TC=O(n)
         ans = ans * (n - i);
         ans = ans / i;
         res.push(ans)

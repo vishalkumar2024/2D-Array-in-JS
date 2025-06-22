@@ -2,7 +2,7 @@ function pascalTraingle(row, col) {
     let n=row-1;
     let r=col-1;
     let res = 1;
-    for (let i = 0; i < r; i++) {
+    for (let i = 0; i < r; i++) {  //TC=O(r)
         res = res * (n - i);
         res = res / (i + 1);
     }
