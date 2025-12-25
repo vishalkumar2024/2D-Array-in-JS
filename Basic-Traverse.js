@@ -1,4 +1,4 @@
-//Basic traversal in 2D array
+//Basic traversal in 2D Array
 
 function traverse(arr, m, n) {
     let res = ""; 
